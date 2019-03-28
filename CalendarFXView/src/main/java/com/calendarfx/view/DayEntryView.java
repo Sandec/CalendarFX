@@ -40,6 +40,8 @@ public class DayEntryView extends EntryViewBase<DayView> {
     public DayEntryView(Entry<?> entry) {
         super(entry);
 
+        getStyleClass().setAll("day-entry-view");
+
 //		setMinSize(0, 0);
     }
 

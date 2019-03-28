@@ -34,6 +34,8 @@ public class MonthEntryView extends EntryViewBase<MonthView> {
     public MonthEntryView(Entry<?> entry) {
         super(entry);
 
+        getStyleClass().setAll("month-entry-view");
+
         setMouseTransparent(false);
     }
 

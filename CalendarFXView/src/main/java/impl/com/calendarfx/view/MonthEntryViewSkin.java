@@ -128,7 +128,7 @@ public class MonthEntryViewSkin extends SkinBase<MonthEntryView> {
 
         final ObservableList<String> styleClass = view.getStyleClass();
 
-        styleClass.setAll("month-entry-view", "default-style-entry-small"); //$NON-NLS-1$
+        styleClass.setAll("default-style-entry-small"); //$NON-NLS-1$
         if (calendar != null) {
             styleClass.add(calendar.getStyle() + "-entry-small"); //$NON-NLS-1$
         }
