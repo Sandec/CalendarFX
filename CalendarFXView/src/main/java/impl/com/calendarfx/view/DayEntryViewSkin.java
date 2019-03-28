@@ -97,6 +97,8 @@ public class DayEntryViewSkin extends SkinBase<DayEntryView> {
      * settings.
      */
     protected void updateStyles() {
+        if(getSkinnable() == null) return;
+
         DayEntryView view = getSkinnable();
         Entry<?> entry = getEntry();
 
@@ -174,6 +176,8 @@ public class DayEntryViewSkin extends SkinBase<DayEntryView> {
      * This method will be called if the labels need to be updated.
      */
     protected void updateLabels() {
+        if(getSkinnable() == null) return;
+
         Entry<?> entry = getEntry();
 
         startTimeLabel.setText(formatTime(entry.getStartTime()));
